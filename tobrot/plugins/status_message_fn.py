@@ -49,18 +49,18 @@ async def status_message_f(client, message):
             e_t_a = str(download.eta_string())
             current_gid = str(download.gid)
             #
-            msg += f"<u>{downloading_dir_name}</u>"
+            msg += f"{downloading_dir_name}"
             msg += "\n Size :- "
             msg += f"{total_length_size}"
-            msg += " | "
+            msg += " ║ "
             msg += f"{progress_percent_string}"
             msg += "\n"
-            msg += f"{DOWNLOAD_ICON} {down_speed_string}"
-            msg += " | "
+            msg += f"{down_speed_string} {DOWNLOAD_ICON}"
+            msg += " ║ "
             msg += f"{UPLOAD_ICON} {up_speed_string}"
             msg += "\n"
             msg += f"{e_t_a}"
-            msg += " | "
+            msg += " ║ "
             msg += f"{download_current_status}"
             msg += "\n"
             msg += f"<code>/cancel {current_gid}</code>"
