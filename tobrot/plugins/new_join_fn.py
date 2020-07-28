@@ -32,5 +32,5 @@ async def help_message_f(client, message):
     await message.reply_text("Check Pinned Message📌\n Also Check Rules Before Using Commands ☑", quote=True)
 
 async def rename_message_f(client, message):
-    await message.reply_text("If You Want To Rename, Send Link As\n <code>www.website.com/ABC.xyz | Your Custom Name.extension</code>\n Then Your File Uploaded As <code>Your Custom name.extension</code>\n• Only Works With Direct Download Links. Don't Try With Magnet Link or .torrent Unless You Will Rewarded With <b>Ban</b>", quote=True)
+    await message.reply_text("If You Want To Rename, Send Link As\n<code>Direct Link | Custom Name.extension</code>\n Then Your File Uploaded As <code>Custom name.extension</code>\n• Only Works With Direct Download Links. Don't Try With Magnet Link or .torrent Unless You Will Rewarded With <b>Ban</b>", quote=True)
 
