@@ -36,7 +36,7 @@ async def button(bot, update: CallbackQuery):
                     downloads = aria_i_p.get_download(g_id)
                     LOGGER.info(downloads)
                     LOGGER.info(downloads.remove(force=True))
-                    await i_m_s_e_g.edit_text(f"• Process has been Cancelled by <a href='tg://user?id={update.from_user.id}'>{update.from_user.first_name}</a>")
+                    await i_m_s_e_g.edit_text(f"Process has been Cancelled.\nBy • <a href='tg://user?id={update.from_user.id}'>{update.from_user.first_name}</a>")
                 except Exception as e:
                     await i_m_s_e_g.edit_text("<i>FAILED</i>\n\n" + str(e) + "\n#error")
                 else:
