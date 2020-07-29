@@ -28,7 +28,7 @@ async def button(bot, update: CallbackQuery):
         print(cb_data)
         if cb_data.startswith("cancel"):
             if len(cb_data) > 1:
-                i_m_s_e_g = await update.message.reply_text("checking..?", quote=True)
+                i_m_s_e_g = await update.message.reply_text("Okay, Wait I'm Checking....", quote=True)
                 aria_i_p = await aria_start()
                 g_id = cb_data.split()[-1]
                 LOGGER.info(g_id)
@@ -36,7 +36,7 @@ async def button(bot, update: CallbackQuery):
                     downloads = aria_i_p.get_download(g_id)
                     LOGGER.info(downloads)
                     LOGGER.info(downloads.remove(force=True))
-                    await i_m_s_e_g.edit_text(f"Leech <a href='tg://user?id=str(from_user)'>Here</a> Cancelled by <a href='tg://user?id={update.from_user.id}'>{update.from_user.first_name}</a>")
+                    await i_m_s_e_g.edit_text(f"• Process has been Cancelled by <a href='tg://user?id={update.from_user.id}'>{update.from_user.first_name}</a>")
                 except Exception as e:
                     await i_m_s_e_g.edit_text("<i>FAILED</i>\n\n" + str(e) + "\n#error")
                 else:
