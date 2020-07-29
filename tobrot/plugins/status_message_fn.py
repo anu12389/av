@@ -50,9 +50,9 @@ async def status_message_f(client, message):
             current_gid = str(download.gid)
             #
             msg += f"{downloading_dir_name}"
-            msg += "\n Size :- "
+            msg += "\nSize • "
             msg += f"{total_length_size}"
-            msg += " ║ "
+            msg += " ║ Progress • "
             msg += f"{progress_percent_string}"
             msg += "\n"
             msg += f"{down_speed_string} {DOWNLOAD_ICON}"
