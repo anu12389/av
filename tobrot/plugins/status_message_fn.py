@@ -82,7 +82,7 @@ async def cancel_message_f(client, message):
             LOGGER.info(downloads)
             LOGGER.info(downloads.remove(force=True))
             await i_m_s_e_g.edit_text(
-                "Process has been Cancelled by <a href='tg://user?id={update.from_user.id}'>{update.from_user.first_name}</a>"
+                "Process has been Cancelled Successfully."
             )
         except Exception as e:
             await i_m_s_e_g.edit_text(
@@ -137,7 +137,7 @@ async def exec_message_f(client, message):
 
 async def upload_document_f(client, message):
     imsegd = await message.reply_text(
-        "processing ..."
+        "Okay, I'm Processing ..."
     )
     if message.from_user.id in AUTH_CHANNEL:
         if " " in message.text:
