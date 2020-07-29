@@ -442,7 +442,7 @@ async def check_progress_for_dl(aria2, gid, event, previous_message):
                 if is_file is None :
                    msg += f"\nConnections • {file.connections}"
                 else :
-                   msg += f"\n[ Peer • {file.connections} || Seeder • {file.num_seeders} ]"
+                   msg += f"\nPeer • {file.connections} || Seeder • {file.num_seeders}"
 
                 # msg += f"\nStatus • {file.status}"
                 msg += f"\nETA • {file.eta_string()}"
