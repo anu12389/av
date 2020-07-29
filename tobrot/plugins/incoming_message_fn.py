@@ -38,7 +38,7 @@ async def incoming_purge_message_f(client, message):
 
 async def incoming_message_f(client, message):
     """/leech command"""
-    i_m_sefg = await message.reply_text("Wait Im Processing....", quote=True)
+    i_m_sefg = await message.reply_text("Wait I'm Processing....", quote=True)
     is_zip = False
     is_unzip = False
     is_unrar = False
@@ -96,7 +96,7 @@ async def incoming_message_f(client, message):
 #
 async def incoming_gdrive_message_f(client, message):
     """/gleech command"""
-    i_m_sefg = await message.reply_text("processing", quote=True)
+    i_m_sefg = await message.reply_text("Wait I'm Processing....", quote=True)
     is_zip = False
     is_unzip = False
     is_unrar = False
@@ -152,7 +152,7 @@ async def incoming_gdrive_message_f(client, message):
 
 async def incoming_youtube_dl_f(client, message):
     """ /ytdl command """
-    i_m_sefg = await message.reply_text("processing", quote=True)
+    i_m_sefg = await message.reply_text("Wait I'm Processing....", quote=True)
     # LOGGER.info(message)
     # extract link from message
     dl_url, cf_name, yt_dl_user_name, yt_dl_pass_word = await extract_link(
