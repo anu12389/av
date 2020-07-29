@@ -82,7 +82,7 @@ async def cancel_message_f(client, message):
             LOGGER.info(downloads)
             LOGGER.info(downloads.remove(force=True))
             await i_m_s_e_g.edit_text(
-                "Your Process has been Cancelled Successfully. "
+                "Process has been Cancelled by <a href='tg://user?id={update.from_user.id}'>{update.from_user.first_name}</a>"
             )
         except Exception as e:
             await i_m_s_e_g.edit_text(
