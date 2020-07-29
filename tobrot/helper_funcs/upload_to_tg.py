@@ -239,7 +239,7 @@ async def upload_single_file(message, local_file_name, caption_str, from_user, e
         thumb = None
         message_for_progress_display = message
         if not edit_media:
-            message_for_progress_display = await message.reply_text("starting upload of {}".format(os.path.basename(local_file_name)))
+            message_for_progress_display = await message.reply_text("Now Uploading {}".format(os.path.basename(local_file_name)))
         sent_message = await message.reply_document(
             document=local_file_name,
     	    # quote=True,
@@ -263,7 +263,7 @@ async def upload_single_file(message, local_file_name, caption_str, from_user, e
             message_for_progress_display = message
             if not edit_media:
                 message_for_progress_display = await message.reply_text(
-                    "starting upload of {}".format(os.path.basename(local_file_name))
+                    "Now Uploading {}".format(os.path.basename(local_file_name))
                 )
             if local_file_name.upper().endswith(("MKV", "MP4", "WEBM")):
                 metadata = extractMetadata(createParser(local_file_name))
