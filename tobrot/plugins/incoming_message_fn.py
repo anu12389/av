@@ -38,7 +38,7 @@ async def incoming_purge_message_f(client, message):
 
 async def incoming_message_f(client, message):
     """/leech command"""
-    i_m_sefg = await message.reply_text("processing", quote=True)
+    i_m_sefg = await message.reply_text("Wait Im Processing....", quote=True)
     is_zip = False
     is_unzip = False
     is_unrar = False
@@ -57,7 +57,7 @@ async def incoming_message_f(client, message):
     LOGGER.info(dl_url)
     LOGGER.info(cf_name)
     if dl_url is not None:
-        await i_m_sefg.edit_text("Extracting Links 🌐 ..... ?")
+        await i_m_sefg.edit_text("Extracting Links 🌐 .....")
         # start the aria2c daemon
         aria_i_p = await aria_start()
         LOGGER.info(aria_i_p)
