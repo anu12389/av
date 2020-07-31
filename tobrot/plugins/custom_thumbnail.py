@@ -44,8 +44,8 @@ async def save_thumb_nail(client, message):
         # https://pillow.readthedocs.io/en/3.1.x/reference/Image.html#create-thumbnails
         os.remove(downloaded_file_name)
         await ismgs.edit(
-            "Your Image is Successfully Saved as Thumbnail For Videos & Files" + \
-            "This Image Will Be Used as Thumbnail to Further Uploads \nYou Can Change This By /delete"
+            "Your Image is Successfully Saved as Thumbnail For Videos & Files." + \
+            "This Image Will Be Used as Thumbnail to Further Uploads.\nYou Can Change This By /delete"
         )
     else:
         await message.edit("Reply To a Image To Set Custom Thumbnail")
@@ -60,7 +60,7 @@ async def clear_thumb_nail(client, message):
         thumbnail_location,
         str(message.from_user.id) + ".jpg"
     )
-    ismgs = await message.reply_text("Okay Wait,\nI'm Processing")
+    ismgs = await message.reply_text("Okay Wait,\nI'm Processing....")
     if os.path.exists(thumb_image_path):
         os.remove(thumb_image_path)
     await ismgs.edit("Custom Thumbnail Deleted Succesfully.")
