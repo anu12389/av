@@ -157,7 +157,7 @@ async def upload_to_gdrive(file_upload, message, messa_ge, g_id):
         LOGGER.info(gautam)
         LOGGER.info(tam.decode('utf-8'))
         #os.remove("filter.txt")
-        gauti = f"https://drive.google.com/file/d/{gautam}/view?usp=drivesdk"
+        gauti = f"https://drive.google.com/uc?id={gautam}&export=download"
         gau_link = re.search("(?P<url>https?://[^\s]+)", gauti).group("url")
         LOGGER.info(gau_link)
         #indexurl = f"{INDEX_LINK}/{file_upload}"
