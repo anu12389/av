@@ -1,4 +1,4 @@
-﻿[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy) [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/) [![anu](http://ForTheBadge.com/images/badges/featured-built-with-love.svg)](https://www.t.me/)
+﻿[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy) [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/) ![Profile views](https://gpvc.arturio.dev/Add830830)
 
 ## Configuration Variables
 
@@ -13,7 +13,7 @@
 * `RCLONE_CONFIG`: Create the rclone config using the rclone.org and read the rclone section for the next.
 
 * `DESTINATION_FOLDER`: Name of your folder in ur respective drive where you want to upload the files using the bot.
-
+wh
 * `OWNER_ID`: ID of the bot owner, He/she can be able to access bot in bot mode too.
 Get Value by Send /info to [MissRose](https://telegram.me/MissRose_bot)
 
