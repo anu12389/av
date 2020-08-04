@@ -1,5 +1,5 @@
 ﻿[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy) [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/) ![Profile views](https://gpvc.arturio.dev/Add830830)
-
+[![Badge](https://fdtu25d5f81p.runkit.sh)](https://git.io/gradientbadge)
 ## Configuration Variables
 
 ##### Mandatory
