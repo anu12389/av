@@ -1,4 +1,4 @@
-﻿[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy) [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+﻿[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy) [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/) [![anu](http://ForTheBadge.com/images/badges/featured-built-with-love.svg)](https://www.t.me/)
 
 ## Configuration Variables
 
