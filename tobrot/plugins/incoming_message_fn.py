@@ -93,7 +93,6 @@ async def incoming_message_f(client, message):
     else:
         await i_m_sefg.edit_text(
             "Use This Command As Reply To a <b><i>Direct Download Link</i></b> or <b><i>Magnet Link</i></b> or <b><i>.torrent File</i></b>. \n"
-            f"<b>API Error</b>: {cf_name}"
         )
 #
 async def incoming_gdrive_message_f(client, message):
@@ -148,7 +147,6 @@ async def incoming_gdrive_message_f(client, message):
     else:
         await i_m_sefg.edit_text(
             "Use This Command As Reply To a <b><i>Direct Download Link</i></b> or <b><i>Magnet Link</i></b> or <b><i>.torrent File</i></b>. \n"
-            f"<b>API Error</b>: {cf_name}"
         )
 
 
@@ -203,7 +201,6 @@ async def incoming_youtube_dl_f(client, message):
     else:
         await i_m_sefg.edit_text(
             "Use This Command As Reply To a <b><i>Streaming Link</i></b>.\n"
-            f"<b>API Error</b>: {cf_name}"
         )
 #playlist
 async def g_yt_playlist(client, message):
