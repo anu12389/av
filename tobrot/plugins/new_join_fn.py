@@ -32,5 +32,4 @@ async def help_message_f(client, message):
     await message.reply_text("Check 📌 Pinned Message.\nAlso Check Rules Before Using Commands ✅.", quote=True)
 
 async def rename_message_f(client, message):
-    await message.reply_text("If You Want To Rename, Send Link As\n<code>Link | Custom Name.extension</code>\nThen Your File Uploaded As\n<code>Custom name.extension</code>\n• Only Works With Direct Download Links. <i>Don't Try With Magnet Link or .torrent Unless You Will Rewarded With <u><b>Ban</b></u></i>", quote=True)
-
+    await message.sendfile(chat, "me", file='https://grouphelp.top/channel/api/beta/?file_id=AgACAgUAAxkBAAIhcF8m51XiPprSWKU3GBOaUoIEHFoVAAJqqjEbo6_oVmYG0Q-TbGWeug8ia3QAAwEAAwIAA3kAA8GeAQABGgQ')
