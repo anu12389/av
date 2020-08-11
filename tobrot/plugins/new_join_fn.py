@@ -32,4 +32,10 @@ async def help_message_f(client, message):
     await message.reply_text("Check 📌 Pinned Message.\nAlso Check Rules Before Using Commands ✅.", quote=True)
 
 async def rename_message_f(client, message):
-    await message.sendfile(chat, "me", file='https://grouphelp.top/channel/api/beta/?file_id=AgACAgUAAxkBAAIhcF8m51XiPprSWKU3GBOaUoIEHFoVAAJqqjEbo6_oVmYG0Q-TbGWeug8ia3QAAwEAAwIAA3kAA8GeAQABGgQ')
+    await message.reply_photo(
+                #text_message,
+                photo=https://grouphelp.top/channel/api/beta/?file_id=AgACAgUAAxkBAAIhcF8m51XiPprSWKU3GBOaUoIEHFoVAAJqqjEbo6_oVmYG0Q-TbGWeug8ia3QAAwEAAwIAA3kAA8GeAQABGgQ,
+                quote=True,
+                caption=text_message,
+                reply_markup=reply_markup
+            )
